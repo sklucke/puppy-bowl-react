@@ -14,7 +14,7 @@ export const fetchAllPlayers = async () => {
 
 export const fetchSingleplayer = async (playerId) => {
     try {
-        const response = await fetch(`APIURL/${playerId}`);
+        const response = await fetch(`${APIURL}/${playerId}`);
         if (!response.ok) {
             throw new Error("Network response /GET single player not ok");
         }
