@@ -1,9 +1,15 @@
-import React from "react"
+import React from "react";
+import PlayerCardItem from "./PlayerCardItem";
 
-const AllPlayers = () => {
-    return (
-        <div>AllPlayers</div>
+const AllPlayers = ({players}) => {
+    return(
+        <div>
+            <h1>All Players</h1>
+            {players.map((player) => {
+                return <PlayerCardItem key={player.id} player={player} />
+            })}
+        </div>
     )
 }
 
-export default AllPlayers
+export default AllPlayers;
