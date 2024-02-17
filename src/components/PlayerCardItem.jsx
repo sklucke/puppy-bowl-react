@@ -1,7 +1,11 @@
 import React from "react"
 import "./PlayerCardItem.css";
 
-const PlayerCardItem = ({player}) => {
+const PlayerCardItem = ({player, isSinglePlayer}) => {
+    const handleDelete = () => {}
+    const handleSeeDetails = () => {
+        
+    }
     return(
         <div className="player-container">
             <img src={player.imageUrl} alt={player.name} />

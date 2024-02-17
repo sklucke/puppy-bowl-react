@@ -11,10 +11,11 @@ const SinglePlayer = () => {
             const player = await fetchSinglePlayer(id)
             setPlayer(player);
         }
+        getSinglePlayer();
     }, [id])
     return (
         <div>
-            <PlayerCardItem player={player} />
+            {player && <PlayerCardItem player={player} isSinglePlayer={id} /> }
         </div>
     )
 }
