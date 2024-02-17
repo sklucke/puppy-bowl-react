@@ -20,7 +20,7 @@ const App = () => {
             <NavBar/>
             <Routes>
                 <Route path="/" element={<h1>Home</h1>}/>
-                <Route path="/players" element={<Allplayers players={players} />} />
+                <Route path="/players" element={<Allplayers players={players} setPlayers={setPlayers} />} />
                 <Route path="/players/:id" element={<SinglePlayer />} />
             </Routes>
         </div>
