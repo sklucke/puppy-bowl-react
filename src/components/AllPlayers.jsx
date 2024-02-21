@@ -8,7 +8,7 @@ const AllPlayers = ({players, setPlayers}) => {
             <h1>All Players</h1>
             <NewPlayerForm  setPlayers={setPlayers}/>
             {players.map((player) => {
-                return <PlayerCardItem key={player.id} player={player} />
+                return <PlayerCardItem key={player.id} player={player} setPlayers={setPlayers} />
             })}
         </div>
     )

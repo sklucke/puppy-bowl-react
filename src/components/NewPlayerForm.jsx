@@ -13,6 +13,7 @@ const NewPlayerForm = ({setPlayers}) => {
         }
         const newPlayer = await addNewPlayer(name, imageUrl, breed)
         console.log("new player", newPlayer)
+        setPlayers((prevPlayer) => [newPlayer, ...prevPlayer])
         setName("");
         setBreed("")
         setImageUrl("")
