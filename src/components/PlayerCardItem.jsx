@@ -25,12 +25,13 @@ const PlayerCardItem = ({player, isSinglePlayer, setPlayers }) => {
             <img src={player.imageUrl} alt={player.name} />
             <div className="header-info">
                 <h3 className="player-title">{player.name}</h3>
-                <p className="player-number">{player.id}</p>
                 <div>
                     <button onClick={handleDelete} className="delete-button">Delete</button>
                     <button onClick={handleSeeDetails} className="detail-button"> {!isSinglePlayer ? "See Details" : "Go Back"}</button>
 
                 </div>
+                <p className="player-number">{player.id}</p>
+                
             </div>
 
         </div>
